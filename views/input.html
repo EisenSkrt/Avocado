@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Momo input</title>
+		<link rel="stylesheet" href="../stylesheets/index.css">
+		<link rel="stylesheet" href="../stylesheets/input.css">	
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+		<script src="../scripts/input.js"></script>	
+	</head>
+	<body>
+
+		<div class="myBackground" ng-app="momoInput" ng-controller="inputCtrl">
+			<h1>What avocados does Momo want?</h1>
+			<div class="myForm-container">
+				<form class="myForm">
+					<ul>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Total Volume:</h3>
+								<input class="myInput" type="number" ng-model="input.total_volume">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Small Avocados:</h3>
+								<input class="myInput" type="number" ng-model="input.small_avo">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Large Avocados:</h3>
+								<input class="myInput" type="number" ng-model="input.large_avo">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">XL Avocados:</h3>
+								<input class="myInput" type="number" ng-model="input.xl_avo">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Total Bags:</h3>
+								<input class="myInput" type="number" ng-model="input.total_bags">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Small Bags:</h3>
+								<input class="myInput" type="number" ng-model="input.small_bags">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Large Bags:</h3>
+								<input class="myInput" type="number" ng-model="input.large_bags">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">XL Bags:</h3>
+								<input class="myInput" type="number" ng-model="input.xl_bags">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Year:</h3>
+								<input class="myInput" type="number" min="0" step="1" ng-model="input.year">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Avocado Type:</h3>
+								<select class="myInput" ng-model="input.type">
+									<option ng-repeat="x in types" value="{{x.api_name}}">{{x.display_name}}</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
+								<h3 class="myInput-text">Region:</h3>
+								<input class="myInput" type="text" ng-model="input.region">
+							</div>
+						</li>
+					</ul>
+				</form>
+				<div class="myForm-buttons-container">
+					<button class="submit" ng-click="submit()"><h3><b>SUBMIT PURCHASE</b></h3></button>
+					<h4>{{msg}}</h4>
+					<button class="reset" ng-click="reset()"><h3><b>RESET PURCHASE</b></h3></button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

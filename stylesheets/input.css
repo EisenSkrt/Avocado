@@ -1,0 +1,58 @@
+.myForm-container {
+  color: #fff;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.myForm {
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+div.myInput-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.myInput-text {
+	display: flex ;
+}
+
+.myInput {
+	width: 20em;
+	display: flex;
+	background-color: #556b2f;
+	border-radius: 10em;
+	color: white;
+}
+
+ul {
+	list-style-image: url('../images/momo_icon .png');
+}
+
+.myForm-buttons-container {
+	display: flex;
+	height: 30em;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.submit {
+    background-image: url('../images/happy_aang.jpeg');
+    background-repeat: no-repeat;
+	width: 300px;
+    height: 200px;
+}
+
+.reset {
+	background-image: url('../images/sad_aang.jpeg');
+	width: 300px;
+    height: 200px;
+	background-repeat: no-repeat;
+}
+	

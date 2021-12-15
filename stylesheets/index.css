@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+  color: #fff;
+  background-color: #90EE90;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  border: 1px solid #fff;
+  width: 900px;
+  display: flex;
+  justify-content: space-around;
+}
+
+body {
+  background-image: url("../images/avocado.png");
+  background-repeat: repeat;
+  background-position: right top;
+  margin-right: 200px;
+}
+
+h1, h3, h4 {
+	text-align: center;
+	color: green;
+	text-shadow: 2px 2px yellow
+}
+
+marquee {
+	padding: 20px 0
+}
