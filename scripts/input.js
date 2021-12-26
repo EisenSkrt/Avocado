@@ -97,7 +97,7 @@ inputCtrl = function($scope, $http) {
 		if($scope.isValid()) {
 			  $http({
 				  method: 'POST',
-				  url:'http://localhost:8000/predictorInput/',
+				  url:'http://192.168.187.4:8000/predictorInput/',
 				  data: $scope.input
 				  }).then(function mySuccess(response) {
 					//Response data when the API is complete will be put in msg
