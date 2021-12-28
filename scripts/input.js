@@ -97,7 +97,7 @@ inputCtrl = function($scope, $http) {
 		if($scope.isValid()) {
 			  $http({
 				  method: 'POST',
-				  url:'http://momo-api-momo-ai.192.168.99.100.nip.io/:8000/predictorInput/',
+				  url:'http://momo-api-momo-ai.192.168.99.100.nip.io/predictorInput/',
 				  data: $scope.input
 				  }).then(function mySuccess(response) {
 					//Response data when the API is complete will be put in msg
