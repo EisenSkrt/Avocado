@@ -16,6 +16,12 @@
 					<ul>
 						<li>
 							<div class="myInput-container">
+								<h3 class="myInput-text">Date:</h3>
+								<input class="myInput" type="text" ng-model="input.date">
+							</div>
+						</li>
+						<li>
+							<div class="myInput-container">
 								<h3 class="myInput-text">Total Volume:</h3>
 								<input class="myInput" type="number" ng-model="input.total_volume">
 							</div>
@@ -64,12 +70,6 @@
 						</li>
 						<li>
 							<div class="myInput-container">
-								<h3 class="myInput-text">Year:</h3>
-								<input class="myInput" type="number" min="0" step="1" ng-model="input.year">
-							</div>
-						</li>
-						<li>
-							<div class="myInput-container">
 								<h3 class="myInput-text">Avocado Type:</h3>
 								<select class="myInput" ng-model="input.type">
 									<option ng-repeat="x in types" value="{{x.api_name}}">{{x.display_name}}</option>
@@ -79,7 +79,9 @@
 						<li>
 							<div class="myInput-container">
 								<h3 class="myInput-text">Region:</h3>
-								<input class="myInput" type="text" ng-model="input.region">
+								<select class="myInput" ng-model="input.region">
+									<option ng-repeat="x in regions" value="{{x.api_name}}">{{x.display_name}}</option>
+								</select>
 							</div>
 						</li>
 					</ul>
